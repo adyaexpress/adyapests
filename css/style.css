@@ -1,512 +1,91 @@
-/* ===========================
-   AdyaPests Premium Website
-=========================== */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+<title>AdyaPests | Premium Pest Control Oman</title>
 
-html{
-scroll-behavior:smooth;
-}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-body{
-font-family:'Poppins',sans-serif;
-background:#f4f7fb;
-color:#222;
-line-height:1.7;
-}
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-/* Container */
+<link rel="stylesheet" href="css/style.css">
 
-.container{
-width:90%;
-max-width:1200px;
-margin:auto;
-}
+</head>
 
-/* Header */
+<body>
 
-header{
+<header>
 
-position:fixed;
-top:0;
-left:0;
-width:100%;
+<div class="container">
 
-background:#0b4ea2;
+<div class="logo">
+<h2>AdyaPests</h2>
+</div>
 
-box-shadow:0 10px 30px rgba(0,0,0,.08);
+<nav>
 
-z-index:999;
+<ul>
 
-}
+<li><a href="#home">Home</a></li>
 
-header .container{
+<li><a href="#about">About</a></li>
 
-display:flex;
+<li><a href="#services">Services</a></li>
 
-justify-content:space-between;
+<li><a href="#contact">Contact</a></li>
 
-align-items:center;
+</ul>
 
-padding:20px 0;
+</nav>
 
-}
+<a href="tel:+96879689968" class="call-btn">
 
-.logo h2{
+Call Now
 
-color:white;
+</a>
 
-font-size:30px;
+</div>
 
-font-weight:700;
+</header>
 
-}
 
-nav ul{
+<section class="hero" id="home">
 
-display:flex;
+<div class="container">
 
-list-style:none;
+<h1>
 
-gap:35px;
+Protecting Homes & Businesses Across Oman
 
-}
+</h1>
 
-nav a{
+<p>
 
-color:white;
+Professional Residential, Commercial and Industrial Pest Control Services.
 
-text-decoration:none;
+</p>
 
-font-weight:500;
+<div class="hero-buttons">
 
-transition:.3s;
+<a href="#contact" class="btn-primary">
 
-}
+Book Free Inspection
 
-nav a:hover{
+</a>
 
-color:#9ed0ff;
+<a href="https://wa.me/96879689968"
 
-}
+class="btn-secondary">
 
-.call-btn{
+WhatsApp
 
-background:white;
+</a>
 
-color:#0b4ea2;
+</div>
 
-padding:12px 24px;
+</div>
 
-border-radius:40px;
-
-text-decoration:none;
-
-font-weight:bold;
-
-transition:.3s;
-
-}
-
-.call-btn:hover{
-
-transform:translateY(-2px);
-
-}
-
-/* Hero */
-
-.hero{
-
-height:100vh;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-text-align:center;
-
-padding:0 20px;
-
-background:
-
-linear-gradient(rgba(11,78,162,.80),rgba(11,78,162,.80)),
-url("https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1600&q=80");
-
-background-size:cover;
-
-background-position:center;
-
-color:white;
-
-}
-
-.hero h1{
-
-font-size:60px;
-
-margin-bottom:20px;
-
-line-height:1.1;
-
-}
-
-.hero p{
-
-font-size:22px;
-
-max-width:750px;
-
-margin:auto;
-
-margin-bottom:35px;
-
-}
-
-.hero-buttons{
-
-display:flex;
-
-justify-content:center;
-
-gap:20px;
-
-flex-wrap:wrap;
-
-}
-
-.btn-primary{
-
-background:#ffd447;
-
-padding:16px 36px;
-
-border-radius:50px;
-
-text-decoration:none;
-
-font-weight:bold;
-
-color:#222;
-
-transition:.3s;
-
-}
-
-.btn-primary:hover{
-
-transform:translateY(-3px);
-
-}
-
-.btn-secondary{
-
-border:2px solid white;
-
-padding:16px 36px;
-
-border-radius:50px;
-
-color:white;
-
-text-decoration:none;
-
-transition:.3s;
-
-}
-
-.btn-secondary:hover{
-
-background:white;
-
-color:#0b4ea2;
-
-}
-
-/* Sections */
-
-section{
-
-padding:100px 0;
-
-}
-
-section h2{
-
-font-size:40px;
-
-text-align:center;
-
-margin-bottom:20px;
-
-color:#0b4ea2;
-
-}
-
-.section-text{
-
-max-width:850px;
-
-margin:auto;
-
-text-align:center;
-
-margin-bottom:60px;
-
-}
-
-/* About */
-
-.about-grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-
-gap:30px;
-
-}
-
-.about-card{
-
-background:white;
-
-padding:35px;
-
-border-radius:20px;
-
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-
-transition:.3s;
-
-}
-
-.about-card:hover{
-
-transform:translateY(-8px);
-
-}
-
-/* Services */
-
-.services{
-
-background:#eef5ff;
-
-}
-
-.services-grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-
-gap:30px;
-
-}
-
-.service-card{
-
-background:white;
-
-padding:40px;
-
-border-radius:20px;
-
-box-shadow:0 15px 30px rgba(0,0,0,.08);
-
-transition:.3s;
-
-}
-
-.service-card:hover{
-
-transform:translateY(-10px);
-
-}
-
-.service-card h3{
-
-margin-bottom:15px;
-
-color:#0b4ea2;
-
-}
-
-/* Footer */
-
-footer{
-
-background:#0b4ea2;
-
-color:white;
-
-text-align:center;
-
-padding:40px 20px;
-
-}
-
-/* Mobile */
-
-@media(max-width:900px){
-
-header .container{
-
-flex-direction:column;
-
-gap:20px;
-
-}
-
-nav ul{
-
-flex-wrap:wrap;
-
-justify-content:center;
-
-gap:15px;
-
-}
-
-.hero h1{
-
-font-size:42px;
-
-}
-
-.hero p{
-
-font-size:18px;
-
-}
-   /* ==========================
-   Statistics
-========================== */
-
-.stats{
-
-background:#0b4ea2;
-
-color:white;
-
-text-align:center;
-
-}
-
-.stats h2{
-
-color:white;
-
-margin-bottom:60px;
-
-}
-
-.stats-grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-
-gap:30px;
-
-}
-
-.stat-box{
-
-background:rgba(255,255,255,.08);
-
-padding:40px;
-
-border-radius:20px;
-
-transition:.3s;
-
-}
-
-.stat-box:hover{
-
-transform:translateY(-8px);
-
-background:rgba(255,255,255,.15);
-
-}
-
-.stat-box h3{
-
-font-size:55px;
-
-color:#FFD447;
-
-margin-bottom:15px;
-
-}
-
-.stat-box p{
-
-font-size:20px;
-
-}
-
-}
-/* ==========================
-   Testimonials
-========================== */
-
-.testimonials{
-
-background:#f8fbff;
-
-}
-
-.testimonial-grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-
-gap:30px;
-
-margin-top:50px;
-
-}
-
-.testimonial-card{
-
-background:white;
-
-padding:35px;
-
-border-radius:20px;
-
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-
-transition:.3s;
-
-}
-
-.testimonial-card:hover{
-
-transform:translateY(-8px);
-
-}
-
-.testimonial-card h3{
-
-margin:20px 0 10px;
-
-color:#0b4ea2;
-
-}
-
-.testimonial-card p{
-
-color:#555;
-
-}
+</section>
